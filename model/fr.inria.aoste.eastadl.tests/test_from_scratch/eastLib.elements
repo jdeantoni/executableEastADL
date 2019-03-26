@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://east-adl.info/2.1.10/eastadl21/east_adl/infrastructure/elements" xmlns:_1="http://east-adl.info/2.1.10/eastadl21/east_adl/structure/functionmodeling" xmlns:_2="http://east-adl.info/2.1.10/eastadl21/east_adl/behavior" xmlns:_3="http://east-adl.info/2.1.10/eastadl21/east_adl/timing" name="p1">
+  <element xsi:type="_1:AnalysisFunctionType" name="AnalysisFunctionType1">
+    <connector name="c1">
+      <port functionPrototype="//@element.0/@part.0" functionPort="//@element.2/@port.0" functionPortProxy="//@element.0/@part.0/@proxyPorts.0"/>
+      <port functionPrototype="//@element.0/@part.1" functionPort="//@element.1/@port.0" functionPortProxy="//@element.0/@part.1/@proxyPorts.0"/>
+    </connector>
+    <part name="AnalysisFunctionPrototype1" type="//@element.2">
+      <proxyPorts xsi:type="_1:FunctionFlowPortProxy" port="//@element.2/@port.0"/>
+    </part>
+    <part name="AnalysisFunctionPrototype2" type="//@element.1">
+      <proxyPorts xsi:type="_1:FunctionFlowPortProxy" port="//@element.1/@port.0"/>
+    </part>
+  </element>
+  <element xsi:type="_1:AnalysisFunctionType" name="AnalysisFunctionType2">
+    <port xsi:type="_1:FunctionFlowPort" name="ip1"/>
+  </element>
+  <element xsi:type="_1:AnalysisFunctionType" name="AnalysisFunctionType3">
+    <port xsi:type="_1:FunctionFlowPort" name="op1" direction="OUT"/>
+  </element>
+  <element xsi:type="_2:Behavior" name="behavior1">
+    <functionTrigger name="trigger1" triggerCondition="10" triggerPolicy="TIME" function="//@element.2" functionPrototype="//@element.0/@part.0"/>
+    <functionTrigger name="trigger2" function="//@element.1" functionPrototype="//@element.0/@part.1" port="//@element.1/@port.0"/>
+  </element>
+  <element xsi:type="_3:Timing" name="timing1">
+    <timingConstraint xsi:type="_3:ExecutionTimeConstraint" name="WB_CET1" targetFunctionPrototype="//@element.0/@part.1" targetFunction="//@element.1">
+      <lower value="1.0"/>
+      <upper value="5.0"/>
+    </timingConstraint>
+    <timingConstraint xsi:type="_3:ExecutionTimeConstraint" name="WB_CET2" targetFunctionPrototype="//@element.0/@part.0" targetFunction="//@element.2">
+      <lower value="1.0"/>
+      <upper value="2.0"/>
+    </timingConstraint>
+  </element>
+</EAPackage>

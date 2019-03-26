@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://east-adl.info/2.1.10/eastadl21/east_adl/infrastructure/elements" xmlns:_1="http://east-adl.info/2.1.10/eastadl21/east_adl/structure/functionmodeling" xmlns:_2="http://east-adl.info/2.1.10/eastadl21/east_adl/infrastructure/datatypes" xmlns:_3="http://east-adl.info/2.1.10/eastadl21/east_adl/behavior" xmlns:_4="http://east-adl.info/2.1.10/eastadl21/east_adl/timing" xmlns:_5="http://east-adl.info/2.1.10/eastadl21/east_adl/timing/events" xmlns:_6="http://east-adl.info/2.1.10/eastadl21/east_adl/timing/timingconstraints" name="p1">
+  <element xsi:type="_1:AnalysisFunctionType" name="t1">
+    <connector name="c1">
+      <port functionPrototype="//@element.0/@part.1" functionPort="//@element.6/@port.1" functionPortProxy="//@element.0/@part.1/@proxyPorts.0"/>
+      <port functionPrototype="//@element.0/@part.0" functionPort="//@element.2/@port.0" functionPortProxy="//@element.0/@part.0/@proxyPorts.0"/>
+    </connector>
+    <connector name="c2">
+      <port functionPrototype="//@element.0/@part.2" functionPort="//@element.4/@port.0" functionPortProxy="//@element.0/@part.2/@proxyPorts.0"/>
+      <port functionPrototype="//@element.0/@part.1" functionPort="//@element.6/@port.0" functionPortProxy="//@element.0/@part.1/@proxyPorts.1"/>
+    </connector>
+    <part name="tempActuator" type="//@element.2">
+      <proxyPorts xsi:type="_1:FunctionFlowPortProxy" port="//@element.2/@port.0"/>
+    </part>
+    <part name="regulator" type="//@element.6">
+      <proxyPorts xsi:type="_1:FunctionFlowPortProxy" port="//@element.6/@port.1"/>
+      <proxyPorts xsi:type="_1:FunctionFlowPortProxy" port="//@element.6/@port.0"/>
+    </part>
+    <part name="sensor1" type="//@element.4">
+      <proxyPorts xsi:type="_1:FunctionFlowPortProxy" port="//@element.4/@port.0"/>
+    </part>
+  </element>
+  <element xsi:type="_2:EAInteger" name="int"/>
+  <element xsi:type="_1:AnalysisFunctionType" name="CmdHeater">
+    <port xsi:type="_1:FunctionFlowPort" name="valveLevel" direction="IN" type="//@element.1"/>
+  </element>
+  <element xsi:type="_3:Behavior" name="behav1">
+    <functionTrigger name="trigg_Regulator" triggerCondition="10" triggerPolicy="TIME" function="//@element.6" functionPrototype="//@element.0/@part.1"/>
+    <functionTrigger name="trigg_CmdHeater" triggerCondition="" triggerPolicy="EVENT" function="//@element.2" functionPrototype="//@element.0/@part.0" port="//@element.2/@port.0"/>
+    <functionTrigger name="trigger_TempSensor" triggerCondition="3" triggerPolicy="TIME" function="//@element.4" functionPrototype="//@element.0/@part.2"/>
+  </element>
+  <element xsi:type="_1:AnalysisFunctionType" name="TemperatureSensor">
+    <port xsi:type="_1:FunctionFlowPort" name="temp" direction="OUT" type="//@element.5"/>
+  </element>
+  <element xsi:type="_2:EAFloat" shortName="float" name="float"/>
+  <element xsi:type="_1:AnalysisFunctionType" name="TempRegulator">
+    <port xsi:type="_1:FunctionFlowPort" name="ip1" type="//@element.1"/>
+    <port xsi:type="_1:FunctionFlowPort" name="op1" direction="OUT" type="//@element.1"/>
+  </element>
+  <element xsi:type="_4:Timing">
+    <timingDescription xsi:type="_4:EventChain" name="temp_2_ip1_EvtChain" response="//@element.7/@timingDescription.3" stimulus="//@element.7/@timingDescription.2" segment="//@element.7/@timingDescription.5"/>
+    <timingDescription xsi:type="_5:EventFunctionFlowPort" name="valveLevelEvt">
+      <port functionPrototype="//@element.0/@part.0" functionFlowPort="//@element.2/@port.0"/>
+    </timingDescription>
+    <timingDescription xsi:type="_5:EventFunctionFlowPort" name="tempEvt">
+      <port functionPrototype="//@element.0/@part.2" functionFlowPort="//@element.4/@port.0"/>
+    </timingDescription>
+    <timingDescription xsi:type="_5:EventFunctionFlowPort" name="ip1Evt">
+      <port functionPrototype="//@element.0/@part.1" functionFlowPort="//@element.6/@port.0"/>
+    </timingDescription>
+    <timingDescription xsi:type="_5:EventFunctionFlowPort" name="op1Evt">
+      <port functionPrototype="//@element.0/@part.1" functionFlowPort="//@element.6/@port.1"/>
+    </timingDescription>
+    <timingDescription xsi:type="_4:EventChain" name="ip1_2_op2_EvtChain" response="//@element.7/@timingDescription.4" stimulus="//@element.7/@timingDescription.3" segment="//@element.7/@timingDescription.6"/>
+    <timingDescription xsi:type="_4:EventChain" name="op1_2_valveLevel_EvtChain" response="//@element.7/@timingDescription.1" stimulus="//@element.7/@timingDescription.4"/>
+    <timingDescription xsi:type="_4:EventChain" name="End-to-End_EvtChain" response="//@element.7/@timingDescription.1" stimulus="//@element.7/@timingDescription.2"/>
+    <timingConstraint xsi:type="_4:ExecutionTimeConstraint" name="execTime_tempActuator" targetFunctionPrototype="//@element.0/@part.0">
+      <lower value="1.0"/>
+      <upper value="2.0"/>
+    </timingConstraint>
+    <timingConstraint xsi:type="_4:ExecutionTimeConstraint" name="execTime_regulator" targetFunctionPrototype="//@element.0/@part.1">
+      <lower value="4.0"/>
+      <upper value="8.0"/>
+    </timingConstraint>
+    <timingConstraint xsi:type="_4:ExecutionTimeConstraint" name="execTime_sensor1" targetFunctionPrototype="//@element.0/@part.2">
+      <lower value="2.0"/>
+      <upper value="3.0"/>
+    </timingConstraint>
+    <timingConstraint xsi:type="_6:ReactionConstraint" name="End-to-End_Timing" scope="//@element.7/@timingDescription.7">
+      <lower name="End-To-End_Timing-LowerBound" value="2.0"/>
+      <upper name="End-To-End_Timing_UpperBound" value="3.0"/>
+    </timingConstraint>
+  </element>
+</EAPackage>

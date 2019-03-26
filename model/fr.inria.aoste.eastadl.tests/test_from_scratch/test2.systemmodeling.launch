@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.gemoc.gemoc_modeling_workbench.ui.launcher">
+<booleanAttribute key="Event Scheduling Execution Tracing" value="true"/>
+<stringAttribute key="First Instruction" value="http://www.eclipse.org/emf/2002/Ecore#/"/>
+<intAttribute key="GEMOC_ANIMATE_DELAY" value="0"/>
+<booleanAttribute key="GEMOC_LAUNCH_BREAK_START" value="false"/>
+<stringAttribute key="GEMOC_LAUNCH_MELANGE_QUERY" value=""/>
+<stringAttribute key="GEMOC_LAUNCH_SELECTED_DECIDER" value="Step by step user decider"/>
+<stringAttribute key="GEMOC_LAUNCH_SELECTED_LANGUAGE" value="systemmodeling"/>
+<stringAttribute key="Resource" value="/fr.inria.aoste.eastadl.tests/test_from_scratch/test2.systemmodeling"/>
+<booleanAttribute key="VCD visualization" value="true"/>
+<stringAttribute key="airdResource" value="/fr.inria.aoste.eastadl.tests/test_from_scratch/test2.aird"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/fr.inria.aoste.eastadl.tests/test_from_scratch/test2.systemmodeling"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+</launchConfiguration>

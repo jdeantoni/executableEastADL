@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<plugin>
+
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/geastadl/ginfrastructure/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.geastadl.ginfrastructure.GinfrastructurePackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/geastadl/ginfrastructure/gelements/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.geastadl.ginfrastructure.gelements.GelementsPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/geastadl/ginfrastructure/gprimitivetypes/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.geastadl.ginfrastructure.gprimitivetypes.GprimitivetypesPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.Eastadl21Package"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.East_adlPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/structure/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.structure.StructurePackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/structure/systemmodeling/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.structure.systemmodeling.SystemmodelingPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/structure/featuremodeling/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.structure.featuremodeling.FeaturemodelingPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/structure/vehiclefeaturemodeling/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.structure.vehiclefeaturemodeling.VehiclefeaturemodelingPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/structure/functionmodeling/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.structure.functionmodeling.FunctionmodelingPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/structure/functionmodeling/_instanceref/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.structure.functionmodeling._instanceref._instancerefPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/structure/hardwaremodeling/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.structure.hardwaremodeling.HardwaremodelingPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/structure/hardwaremodeling/_instanceref/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.structure.hardwaremodeling._instanceref._instancerefPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/behavior/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.behavior.BehaviorPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/variability/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.variability.VariabilityPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/requirements/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.requirements.RequirementsPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/requirements/_instanceref/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.requirements._instanceref._instancerefPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/requirements/usecases/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.requirements.usecases.UsecasesPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/requirements/verificationvalidation/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.requirements.verificationvalidation.VerificationvalidationPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/environment/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.environment.EnvironmentPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/environment/_instanceref/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.environment._instanceref._instancerefPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/interchange/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.interchange.InterchangePackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/timing/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.timing.TimingPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/timing/_instanceref/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.timing._instanceref._instancerefPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/timing/events/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.timing.events.EventsPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/timing/events/_instanceref/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.timing.events._instanceref._instancerefPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/timing/timingconstraints/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.timing.timingconstraints.TimingconstraintsPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/dependability/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.dependability.DependabilityPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/dependability/safetyconstraints/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.dependability.safetyconstraints.SafetyconstraintsPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/dependability/safetyconstraints/_instanceref/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.dependability.safetyconstraints._instanceref._instancerefPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/dependability/errormodel/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.dependability.errormodel.ErrormodelPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/dependability/errormodel/_instanceref/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.dependability.errormodel._instanceref._instancerefPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/dependability/safetyrequirement/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.dependability.safetyrequirement.SafetyrequirementPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/dependability/safetycase/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.dependability.safetycase.SafetycasePackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/genericconstraints/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.genericconstraints.GenericconstraintsPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/infrastructure/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.infrastructure.InfrastructurePackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/infrastructure/elements/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.infrastructure.elements.ElementsPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/infrastructure/elements/_instanceref/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.infrastructure.elements._instanceref._instancerefPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/infrastructure/datatypes/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.infrastructure.datatypes.DatatypesPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/infrastructure/userattributes/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.infrastructure.userattributes.UserattributesPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/annexes/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.annexes.AnnexesPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/annexes/behaviorconstraints/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.annexes.behaviorconstraints.BehaviorconstraintsPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/east_adl/annexes/needs/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.east_adl.annexes.needs.NeedsPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/autosar/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.autosar.AutosarPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/autosar/genericstructure/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.autosar.genericstructure.GenericstructurePackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/autosar/genericstructure/autosartoplevelstructure/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.autosar.genericstructure.autosartoplevelstructure.AutosartoplevelstructurePackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/autosar/genericstructure/generaltemplateclasses/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.autosar.genericstructure.generaltemplateclasses.GeneraltemplateclassesPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/autosar/genericstructure/generaltemplateclasses/timevalue/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.autosar.genericstructure.generaltemplateclasses.timevalue.TimevaluePackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/autosar/genericstructure/generaltemplateclasses/identifiable/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.autosar.genericstructure.generaltemplateclasses.identifiable.IdentifiablePackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/autosar/genericstructure/generaltemplateclasses/primitivetypes/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.autosar.genericstructure.generaltemplateclasses.primitivetypes.PrimitivetypesPackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/autosar/genericstructure/formulalanguage/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.autosar.genericstructure.formulalanguage.FormulalanguagePackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/autosar/genericstructure/abstractstructure/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.autosar.genericstructure.abstractstructure.AbstractstructurePackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated XeastADL -->
+      <package
+            uri="http://fr.inria.aoste.eastadl.xdsml.xeastadl/eastadl21/autosar/systemtemplate/"
+            class="fr.inria.aoste.eastadl.xdsml.xeastadl.eastadl21.autosar.systemtemplate.SystemtemplatePackage"
+            genModel="model/XeastADL.genmodel"/>
+   </extension>
+</plugin>

@@ -1,0 +1,14 @@
+package fr.inria.aoste.executable.eastadl 
+import fr.inria.aoste.eastadl.eastadl21.east_adl.structure.functionmodeling.aspects.AnalysisFunctionPrototypeAspect
+
+language EastADL {
+	syntax "platform:/resource/fr.inria.aoste.eastadl.model/model/geastadl.ecore" withGenmodel "platform:/resource/fr.inria.aoste.eastadl.model/model/eastadl2110.genmodel"
+	syntax "platform:/resource/fr.inria.aoste.eastadl.model/model/eastadl2110.ecore" withGenmodel "platform:/resource/fr.inria.aoste.eastadl.model/model/eastadl2110.genmodel"
+	
+	with fr.inria.aoste.eastadl.eastadl21.east_adl.structure.functionmodeling.aspects.AnalysisFunctionPrototypeAspect
+	with fr.inria.aoste.eastadl.eastadl21.east_adl.structure.functionmodeling.aspects.FunctionFlowPortProxyAspect
+
+
+	ecl "fr.inria.aoste.eastadl.ecl/ecl/EAST-ADL.ecl"
+	sirius "/fr.inria.aoste.eastadl.design/description/eastadl.odesign"
+}

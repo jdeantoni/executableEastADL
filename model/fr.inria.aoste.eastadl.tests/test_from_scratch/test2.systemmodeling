@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://east-adl.info/2.1.10/eastadl21/east_adl/structure/systemmodeling">
+  <analysisLevel>
+    <functionalAnalysisArchitecture name="rootAnalysisFunctionPrototype">
+      <type href="eastLib.elements#//@element.0"/>
+    </functionalAnalysisArchitecture>
+  </analysisLevel>
+</SystemModel>

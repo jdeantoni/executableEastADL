@@ -1,0 +1,31 @@
+AutomataConstraintLibrary taskConstraints{
+	DiscreteClockType clock
+
+	RelationLibrary newRelationLib1 {
+
+		AutomataRelationDefinition taskconstraint [ TaskActivation  ] {
+
+			init:  initialState
+
+			from initialState to inactive : initialStateToactive
+			-> ( )
+
+			from active to inactive : activeToinactive
+			-> ( when desactivate )
+
+			from inactive to active : inactiveToactive
+			-> ( when activate )
+
+			from inactive to inactive : inactiveToinactive
+			-> ( when isExecuting )
+
+			State initialState ( out : initialStateToactive )
+
+			State active ( in : inactiveToactive out : activeToinactive )
+
+			State inactive ( in : activeToinactive, initialStateToactive,
+			inactiveToinactive out : inactiveToactive, inactiveToinactive )
+		}
+		RelationDeclaration TaskActivation (activate : clock, desactivate: clock, isExecuting : clock)
+	}
+}
