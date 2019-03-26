@@ -1,0 +1,121 @@
+[comment encoding = UTF-8 /]
+
+[module generate('http://fr.inria.aoste.timemodel.ccslmodel.clockexpressionandrelation', 
+	'http://www.eclipse.org/emf/2002/Ecore', 
+	'http://org.gemoc.moccml/1.0', 
+	'http://fr.inria.aoste.timemodel',
+	'http://org.gemoc.moccml.fsmmodel/1.0',
+	'http://east-adl.info/2.1.10/eastadl21/east_adl/structure/systemmodeling','http://east-adl.info/2.1.10/eastadl21','http://east-adl.info/2.1.10/eastadl21/east_adl/infrastructure/elements','http://east-adl.info/2.1.10/eastadl21/east_adl/structure/functionmodeling','http://east-adl.info/2.1.10/eastadl21/east_adl/behavior','http://east-adl.info/2.1.10/eastadl21/east_adl/timing','http://east-adl.info/2.1.10/eastadl21/east_adl/timing/timingconstraints') ]
+
+[template public generate(aSystemModel : SystemModel)]
+[comment @main/]
+[file (aSystemModel.name+'_withMoC-.clocksystem', false, 'UTF-8')]
+
+"Some global constants"
+|system moccmllibs ccsllibs|
+"MoCCML librairies specifications" 
+
+	"CCSL librairies specifications"
+
+
+"Instanciation" 
+
+
+system := ClockSystem named: '[aSystemModel.name/]_withMoC-'.
+system addLibrary:moccmllibs asDictionary.
+"system addLibs:ccsllibs asDictionary."
+
+[for (element : eastadl21::east_adl::infrastructure::elements::EAPackage| aSystemModel.eAllContents(eastadl21::east_adl::infrastructure::elements::EAPackage))]
+"clocks for east_adl [element.name/]" 
+system addClocks: #(globalTime[element.name/]).
+
+[/for]
+[for (element : eastadl21::east_adl::structure::functionmodeling::FunctionPrototype| aSystemModel.eAllContents(eastadl21::east_adl::structure::functionmodeling::FunctionPrototype))]
+"clocks for east_adl [element.name/]" 
+[if((self.oclAsType(ecore::EObject).eContainer().oclIsKindOf(FunctionType))) ]system addClocks: #(start[element.name/]).[/if]
+[if((self.oclAsType(ecore::EObject).eContainer().oclIsKindOf(FunctionType))) ]system addClocks: #(finish[element.name/]).[/if]
+
+[/for]
+[for (element : eastadl21::east_adl::structure::functionmodeling::FunctionPortProxy| aSystemModel.eAllContents(eastadl21::east_adl::structure::functionmodeling::FunctionPortProxy))]
+"clocks for east_adl [element.name/]" 
+[if((self.port.oclAsType(FunctionFlowPort).direction = EADirectionKind::_in)) ]system addClocks: #(read[element.name/]).[/if]
+[if((self.port.oclAsType(FunctionFlowPort).direction = EADirectionKind::_out)) ]system addClocks: #(write[element.name/]).[/if]
+
+[/for]
+[for (element : eastadl21::east_adl::behavior::FunctionTrigger| aSystemModel.eAllContents(eastadl21::east_adl::behavior::FunctionTrigger))]
+"clocks for east_adl [element.name/]" 
+"internal clocks for eastadl21::east_adl::behavior::FunctionTrigger [element.name/]" 
+	[if ( element.functionPrototype.oclAsType(ecore::EObject).eContainer().oclAsType(eastadl21::east_adl::structure::functionmodeling::FunctionType).connector.port->select(fcp : eastadl21::east_adl::structure::functionmodeling::_instanceref::FunctionConnector_port|fcp.functionPortProxy.=(element.functionPrototype.proxyPorts->select(p : eastadl21::east_adl::structure::functionmodeling::FunctionPortProxy | element.port->exists(p2 : eastadl21::east_adl::structure::functionmodeling::FunctionPort | p.port.=(p2)))->first())).oclAsType(ecore::EObject).eContainer().oclAsType(eastadl21::east_adl::structure::functionmodeling::FunctionConnector).port->select(fcp2 : eastadl21::east_adl::structure::functionmodeling::_instanceref::FunctionConnector_port|fcp2.functionPortProxy.<>(element.functionPrototype.proxyPorts->select(p : eastadl21::east_adl::structure::functionmodeling::FunctionPortProxy | element.port->exists(p2 : eastadl21::east_adl::structure::functionmodeling::FunctionPort | p.port.=(p2)))->first())).functionPortProxy->size()>1) ]system addInternalClocks: #(evt_port_write[element.name/]).[/if]
+system addInternalClocks: #(periodicStart[element.name/]).
+
+[/for]
+[for (element : eastadl21::east_adl::timing::ExecutionTimeConstraint| aSystemModel.eAllContents(eastadl21::east_adl::timing::ExecutionTimeConstraint))]
+"clocks for east_adl [element.name/]" 
+"internal clocks for eastadl21::east_adl::timing::ExecutionTimeConstraint [element.name/]" 
+	system addInternalClocks: #(startDelayedByMin[element.name/]).
+system addInternalClocks: #(startDelayedByMax[element.name/]).
+
+[/for]
+[for (element : eastadl21::east_adl::timing::timingconstraints::ReactionConstraint| aSystemModel.eAllContents(eastadl21::east_adl::timing::timingconstraints::ReactionConstraint))]
+"clocks for east_adl [element.name/]" 
+"internal clocks for eastadl21::east_adl::timing::timingconstraints::ReactionConstraint [element.name/]" 
+	[if ( element.scope.stimulus.oclAsType(eastadl21::east_adl::timing::events::EventFunctionFlowPort).port.functionPrototype.proxyPorts->select(pp : eastadl21::east_adl::structure::functionmodeling::FunctionPortProxy|element.scope.stimulus->collect(1_ : eastadl21::east_adl::timing::Event | 1_.oclAsType(eastadl21::east_adl::timing::events::EventFunctionFlowPort))->collect(1_ : eastadl21::east_adl::timing::events::EventFunctionFlowPort | 1_.port)->collect(1_ : eastadl21::east_adl::timing::events::_instanceref::EventFunctionFlowPort_port | 1_.functionFlowPort)->first().=(pp.port))->first()element.scope.stimulus.oclAsType(eastadl21::east_adl::timing::events::EventFunctionFlowPort).port.functionPrototype->first().oclAsType(eastadl21::east_adl::structure::functionmodeling::AnalysisFunctionPrototype).type.EAPackage_element->size()>1) ]system addInternalClocks: #(stimulusDelayedByRC[element.name/]).[/if]
+
+[/for]
+
+[for (element : eastadl21::east_adl::infrastructure::elements::EAPackage| aSystemModel.eAllContents(eastadl21::east_adl::infrastructure::elements::EAPackage))]
+"relations for east_adl [element.name/]" 
+[/for]
+[for (element : eastadl21::east_adl::structure::functionmodeling::FunctionPrototype| aSystemModel.eAllContents(eastadl21::east_adl::structure::functionmodeling::FunctionPrototype))]
+"relations for east_adl [element.name/]" 
+[/for]
+[for (element : eastadl21::east_adl::structure::functionmodeling::FunctionPortProxy| aSystemModel.eAllContents(eastadl21::east_adl::structure::functionmodeling::FunctionPortProxy))]
+"relations for east_adl [element.name/]" 
+[/for]
+[for (element : eastadl21::east_adl::behavior::FunctionTrigger| aSystemModel.eAllContents(eastadl21::east_adl::behavior::FunctionTrigger))]
+"expressions used by  east_adl [element.name/]" 
+
+	[if ( element.functionPrototype.oclAsType(ecore::EObject).eContainer().oclAsType(eastadl21::east_adl::structure::functionmodeling::FunctionType).connector.port->select(fcp : eastadl21::east_adl::structure::functionmodeling::_instanceref::FunctionConnector_port|fcp.functionPortProxy.=(element.functionPrototype.proxyPorts->select(p : eastadl21::east_adl::structure::functionmodeling::FunctionPortProxy | element.port->exists(p2 : eastadl21::east_adl::structure::functionmodeling::FunctionPort | p.port.=(p2)))->first())).oclAsType(ecore::EObject).eContainer().oclAsType(eastadl21::east_adl::structure::functionmodeling::FunctionConnector).port->select(fcp2 : eastadl21::east_adl::structure::functionmodeling::_instanceref::FunctionConnector_port|fcp2.functionPortProxy.<>(element.functionPrototype.proxyPorts->select(p : eastadl21::east_adl::structure::functionmodeling::FunctionPortProxy | element.port->exists(p2 : eastadl21::east_adl::structure::functionmodeling::FunctionPort | p.port.=(p2)))->first())).functionPortProxy->size()>1) ]
+	system allUnion: #([for (ne : eastadl21::east_adl::structure::functionmodeling::FunctionConnector | element.functionPrototype.oclAsType(ecore::EObject).eContainer().oclAsType(eastadl21::east_adl::structure::functionmodeling::FunctionType).connector.port->select(fcp : eastadl21::east_adl::structure::functionmodeling::_instanceref::FunctionConnector_port|fcp.functionPortProxy.=(element.functionPrototype.proxyPorts->select(p : eastadl21::east_adl::structure::functionmodeling::FunctionPortProxy | element.port->exists(p2 : eastadl21::east_adl::structure::functionmodeling::FunctionPort | p.port.=(p2)))->first())).oclAsType(ecore::EObject).eContainer().oclAsType(eastadl21::east_adl::structure::functionmodeling::FunctionConnector).port->select(fcp2 : eastadl21::east_adl::structure::functionmodeling::_instanceref::FunctionConnector_port|fcp2.functionPortProxy.<>(element.functionPrototype.proxyPorts->select(p : eastadl21::east_adl::structure::functionmodeling::FunctionPortProxy | element.port->exists(p2 : eastadl21::east_adl::structure::functionmodeling::FunctionPort | p.port.=(p2)))->first())).functionPortProxy)]write[ne.name/] [/for]) named: #evt_port_write[element.name/]. 
+	[/if]
+ 
+
+	[if ( true) ]
+	system allPeriodicOffsetP: #(globalTime[element.functionPrototype.oclAsType(eastadl21::east_adl::structure::functionmodeling::AnalysisFunctionPrototype).type.EAPackage_element.name/]) named: #periodicStart[element.name/]. 
+	[/if]
+ 
+"relations for east_adl [element.name/]" 
+[/for]
+[for (element : eastadl21::east_adl::timing::ExecutionTimeConstraint| aSystemModel.eAllContents(eastadl21::east_adl::timing::ExecutionTimeConstraint))]
+"expressions used by  east_adl [element.name/]" 
+
+	[if ( true) ]
+	system allDelayFor: #(start[element.targetFunctionPrototype.name/] globalTime[element.targetFunctionPrototype.oclAsType(eastadl21::east_adl::structure::functionmodeling::AnalysisFunctionPrototype).type.EAPackage_element.name/]) named: #startDelayedByMin[element.name/]. 
+	[/if]
+ 
+
+	[if ( true) ]
+	system allDelayFor: #(start[element.targetFunctionPrototype.name/] globalTime[element.targetFunctionPrototype.oclAsType(eastadl21::east_adl::structure::functionmodeling::AnalysisFunctionPrototype).type.EAPackage_element.name/]) named: #startDelayedByMax[element.name/]. 
+	[/if]
+ 
+"relations for east_adl [element.name/]" 
+[/for]
+[for (element : eastadl21::east_adl::timing::timingconstraints::ReactionConstraint| aSystemModel.eAllContents(eastadl21::east_adl::timing::timingconstraints::ReactionConstraint))]
+"expressions used by  east_adl [element.name/]" 
+
+	[if ( true) ]
+	system allDelayFor: #([for (ne : eastadl21::east_adl::timing::events::EventFunctionFlowPort | element.scope.stimulus.oclAsType(eastadl21::east_adl::timing::events::EventFunctionFlowPort).port.functionPrototype.proxyPorts->select(pp : eastadl21::east_adl::structure::functionmodeling::FunctionPortProxy|element.scope.stimulus->collect(1_ : eastadl21::east_adl::timing::Event | 1_.oclAsType(eastadl21::east_adl::timing::events::EventFunctionFlowPort))->collect(1_ : eastadl21::east_adl::timing::events::EventFunctionFlowPort | 1_.port)->collect(1_ : eastadl21::east_adl::timing::events::_instanceref::EventFunctionFlowPort_port | 1_.functionFlowPort)->first().=(pp.port))->first())]write[ne.name/] [/for][for (ne : eastadl21::east_adl::structure::functionmodeling::AnalysisFunctionPrototype | element.scope.stimulus.oclAsType(eastadl21::east_adl::timing::events::EventFunctionFlowPort).port.functionPrototype->first().oclAsType(eastadl21::east_adl::structure::functionmodeling::AnalysisFunctionPrototype).type.EAPackage_element)]globalTime[ne.name/] [/for]) named: #stimulusDelayedByRC[element.name/]. 
+	[/if]
+ 
+"relations for east_adl [element.name/]" 
+[/for]
+[/file]
+[file ('ClkSysFunctionTest.clocksystem', false, 'UTF-8')]
+SimpleSDF example1 system
+[/file]
+
+
+[/template]
+
+
+

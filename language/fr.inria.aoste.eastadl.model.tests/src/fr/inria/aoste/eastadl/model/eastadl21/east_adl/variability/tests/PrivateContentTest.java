@@ -1,0 +1,72 @@
+/**
+ */
+package fr.inria.aoste.eastadl.model.eastadl21.east_adl.variability.tests;
+
+import fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.elements.tests.EAElementTest;
+
+import fr.inria.aoste.eastadl.model.eastadl21.east_adl.variability.PrivateContent;
+import fr.inria.aoste.eastadl.model.eastadl21.east_adl.variability.VariabilityFactory;
+
+import junit.textui.TestRunner;
+
+/**
+ * <!-- begin-user-doc -->
+ * A test case for the model object '<em><b>Private Content</b></em>'.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class PrivateContentTest extends EAElementTest {
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static void main(String[] args) {
+		TestRunner.run(PrivateContentTest.class);
+	}
+
+	/**
+	 * Constructs a new Private Content test case with the given name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PrivateContentTest(String name) {
+		super(name);
+	}
+
+	/**
+	 * Returns the fixture for this Private Content test case.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected PrivateContent getFixture() {
+		return (PrivateContent)fixture;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see junit.framework.TestCase#setUp()
+	 * @generated
+	 */
+	@Override
+	protected void setUp() throws Exception {
+		setFixture(VariabilityFactory.eINSTANCE.createPrivateContent());
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see junit.framework.TestCase#tearDown()
+	 * @generated
+	 */
+	@Override
+	protected void tearDown() throws Exception {
+		setFixture(null);
+	}
+
+} //PrivateContentTest

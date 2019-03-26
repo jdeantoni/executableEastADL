@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ASCII"?>
+<feedback:ActionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:feedback="http://timesquare.inria.fr/feedback">
+  <events name="MSE_p1_1_globalTime">
+    <solverEvent href="MyFirstEastAdlModel.timemodel#//@subBlock.0/@elements.0"/>
+  </events>
+  <events name="MSE_regulator_2_start">
+    <caller href="../test1/MyEastLib.elements#//@element.0/@part.1"/>
+    <action href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPrototype/start"/>
+    <solverEvent href="MyFirstEastAdlModel.timemodel#//@subBlock.0/@elements.1"/>
+  </events>
+  <events name="MSE_tempActuator_3_start">
+    <caller href="../test1/MyEastLib.elements#//@element.0/@part.0"/>
+    <action href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPrototype/start"/>
+    <solverEvent href="MyFirstEastAdlModel.timemodel#//@subBlock.0/@elements.2"/>
+  </events>
+  <events name="MSE_sensor1_4_start">
+    <caller href="../test1/MyEastLib.elements#//@element.0/@part.2"/>
+    <action href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPrototype/start"/>
+    <solverEvent href="MyFirstEastAdlModel.timemodel#//@subBlock.0/@elements.3"/>
+  </events>
+  <events name="MSE_regulator_2_finish">
+    <caller href="../test1/MyEastLib.elements#//@element.0/@part.1"/>
+    <action href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPrototype/stop"/>
+    <solverEvent href="MyFirstEastAdlModel.timemodel#//@subBlock.0/@elements.4"/>
+  </events>
+  <events name="MSE_tempActuator_3_finish">
+    <caller href="../test1/MyEastLib.elements#//@element.0/@part.0"/>
+    <action href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPrototype/stop"/>
+    <solverEvent href="MyFirstEastAdlModel.timemodel#//@subBlock.0/@elements.5"/>
+  </events>
+  <events name="MSE_sensor1_4_finish">
+    <caller href="../test1/MyEastLib.elements#//@element.0/@part.2"/>
+    <action href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPrototype/stop"/>
+    <solverEvent href="MyFirstEastAdlModel.timemodel#//@subBlock.0/@elements.6"/>
+  </events>
+  <events name="MSE_FunctionFlowPortProxyImpl_5_read">
+    <caller href="../test1/MyEastLib.elements#//@element.0/@part.1/@proxyPorts.1"/>
+    <action href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPortProxy/read"/>
+    <solverEvent href="MyFirstEastAdlModel.timemodel#//@subBlock.0/@elements.7"/>
+  </events>
+  <events name="MSE_FunctionFlowPortProxyImpl_6_read">
+    <caller href="../test1/MyEastLib.elements#//@element.0/@part.0/@proxyPorts.0"/>
+    <action href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPortProxy/read"/>
+    <solverEvent href="MyFirstEastAdlModel.timemodel#//@subBlock.0/@elements.8"/>
+  </events>
+  <events name="MSE_FunctionFlowPortProxyImpl_7_write">
+    <caller href="../test1/MyEastLib.elements#//@element.0/@part.1/@proxyPorts.0"/>
+    <action href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPortProxy/write"/>
+    <solverEvent href="MyFirstEastAdlModel.timemodel#//@subBlock.0/@elements.9"/>
+  </events>
+  <events name="MSE_FunctionFlowPortProxyImpl_8_write">
+    <caller href="../test1/MyEastLib.elements#//@element.0/@part.2/@proxyPorts.0"/>
+    <action href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPortProxy/write"/>
+    <solverEvent href="MyFirstEastAdlModel.timemodel#//@subBlock.0/@elements.10"/>
+  </events>
+  <importStatements importURI="platform:/1"/>
+</feedback:ActionModel>

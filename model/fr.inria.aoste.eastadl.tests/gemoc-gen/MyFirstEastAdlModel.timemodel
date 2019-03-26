@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fr.inria.aoste.timemodel.ccslmodel:ClockConstraintSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fr.inria.aoste.timemodel="http://fr.inria.aoste.timemodel" xmlns:fr.inria.aoste.timemodel.basicTypes="http://fr.inria.aoste.timemodel.basicTypes" xmlns:fr.inria.aoste.timemodel.ccslmodel="http://fr.inria.aoste.timemodel.ccslmodel" name="sys_0" superBlock="//@subBlock.0">
+  <subBlock name="mainBlock">
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="p1_1_globalTime">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_p1_1_globalTime">
+        <referencedObjectRefs href="../test1/MyEastLib.elements#/"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="regulator_2_start">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_regulator_2_start">
+        <referencedObjectRefs href="../test1/MyEastLib.elements#//@element.0/@part.1"/>
+        <referencedObjectRefs href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPrototype/start"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="tempActuator_3_start">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_tempActuator_3_start">
+        <referencedObjectRefs href="../test1/MyEastLib.elements#//@element.0/@part.0"/>
+        <referencedObjectRefs href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPrototype/start"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="sensor1_4_start">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_sensor1_4_start">
+        <referencedObjectRefs href="../test1/MyEastLib.elements#//@element.0/@part.2"/>
+        <referencedObjectRefs href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPrototype/start"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="regulator_2_finish">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_regulator_2_finish">
+        <referencedObjectRefs href="../test1/MyEastLib.elements#//@element.0/@part.1"/>
+        <referencedObjectRefs href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPrototype/stop"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="tempActuator_3_finish">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_tempActuator_3_finish">
+        <referencedObjectRefs href="../test1/MyEastLib.elements#//@element.0/@part.0"/>
+        <referencedObjectRefs href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPrototype/stop"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="sensor1_4_finish">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_sensor1_4_finish">
+        <referencedObjectRefs href="../test1/MyEastLib.elements#//@element.0/@part.2"/>
+        <referencedObjectRefs href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPrototype/stop"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="FunctionFlowPortProxyImpl_5_read">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_FunctionFlowPortProxyImpl_5_read">
+        <referencedObjectRefs href="../test1/MyEastLib.elements#//@element.0/@part.1/@proxyPorts.1"/>
+        <referencedObjectRefs href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPortProxy/read"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="FunctionFlowPortProxyImpl_6_read">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_FunctionFlowPortProxyImpl_6_read">
+        <referencedObjectRefs href="../test1/MyEastLib.elements#//@element.0/@part.0/@proxyPorts.0"/>
+        <referencedObjectRefs href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPortProxy/read"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="FunctionFlowPortProxyImpl_7_write">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_FunctionFlowPortProxyImpl_7_write">
+        <referencedObjectRefs href="../test1/MyEastLib.elements#//@element.0/@part.1/@proxyPorts.0"/>
+        <referencedObjectRefs href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPortProxy/write"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="FunctionFlowPortProxyImpl_8_write">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_FunctionFlowPortProxyImpl_8_write">
+        <referencedObjectRefs href="../test1/MyEastLib.elements#//@element.0/@part.2/@proxyPorts.0"/>
+        <referencedObjectRefs href="http://east-adl.info/2.1.10/eastadl21#//east_adl/structure/functionmodeling/FunctionPortProxy/write"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel.basicTypes:IntegerElement" name="trigger_TempSensor_103_toInteger()" value="3">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:Integer" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.2"/>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel.basicTypes:IntegerElement" name="trigg_Regulator_1110_toInteger()" value="10">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:Integer" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.2"/>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel.basicTypes:IntegerElement" name="execTime_tempActuator_121.0_round()" value="1">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:Integer" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.2"/>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel.basicTypes:IntegerElement" name="execTime_regulator_134.0_round()" value="4">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:Integer" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.2"/>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel.basicTypes:IntegerElement" name="execTime_sensor1_142.0_round()" value="2">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:Integer" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.2"/>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel.basicTypes:IntegerElement" name="execTime_tempActuator_122.0_round()" value="2">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:Integer" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.2"/>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel.basicTypes:IntegerElement" name="execTime_regulator_138.0_round()" value="8">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:Integer" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.2"/>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel.basicTypes:IntegerElement" name="execTime_sensor1_143.0_round()" value="3">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:Integer" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.2"/>
+    </elements>
+    <relations name="regulator_2Coincides_readWhenStart2">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1"/>
+      <bindings bindable="//@subBlock.0/@elements.7">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@leftEntity"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.1">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@rightEntity"/>
+      </bindings>
+    </relations>
+    <relations name="tempActuator_3Coincides_readWhenStart2">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1"/>
+      <bindings bindable="//@subBlock.0/@elements.8">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@leftEntity"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.2">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@rightEntity"/>
+      </bindings>
+    </relations>
+    <relations name="regulator_2Coincides_writeWhenFinish2">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1"/>
+      <bindings bindable="//@subBlock.0/@elements.9">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@leftEntity"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.4">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@rightEntity"/>
+      </bindings>
+    </relations>
+    <relations name="sensor1_4Coincides_writeWhenFinish2">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1"/>
+      <bindings bindable="//@subBlock.0/@elements.10">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@leftEntity"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.6">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@rightEntity"/>
+      </bindings>
+    </relations>
+    <relations name="regulator_2Alternates_nonReentrant">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@relationLibraries.0/@relationDeclarations.0"/>
+      <bindings bindable="//@subBlock.0/@elements.1">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@relationLibraries.0/@relationDeclarations.0/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.4">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@relationLibraries.0/@relationDeclarations.0/@parameters.1"/>
+      </bindings>
+    </relations>
+    <relations name="tempActuator_3Alternates_nonReentrant">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@relationLibraries.0/@relationDeclarations.0"/>
+      <bindings bindable="//@subBlock.0/@elements.2">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@relationLibraries.0/@relationDeclarations.0/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.5">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@relationLibraries.0/@relationDeclarations.0/@parameters.1"/>
+      </bindings>
+    </relations>
+    <relations name="sensor1_4Alternates_nonReentrant">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@relationLibraries.0/@relationDeclarations.0"/>
+      <bindings bindable="//@subBlock.0/@elements.3">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@relationLibraries.0/@relationDeclarations.0/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.6">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@relationLibraries.0/@relationDeclarations.0/@parameters.1"/>
+      </bindings>
+    </relations>
+    <relations name="trigg_CmdHeater_9Coincides_startOnTriggeringEvent">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1"/>
+      <bindings bindable="//@subBlock.0/@expressions.0">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@leftEntity"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.2">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@rightEntity"/>
+      </bindings>
+    </relations>
+    <relations name="trigger_TempSensor_10Coincides_startPeriodically">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1"/>
+      <bindings bindable="//@subBlock.0/@expressions.1">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@leftEntity"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.3">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@rightEntity"/>
+      </bindings>
+    </relations>
+    <relations name="trigg_Regulator_11Coincides_startPeriodically">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1"/>
+      <bindings bindable="//@subBlock.0/@expressions.2">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@leftEntity"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.1">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@rightEntity"/>
+      </bindings>
+    </relations>
+    <relations name="execTime_tempActuator_12NonStrictPrecedes_minExecTime">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4"/>
+      <bindings bindable="//@subBlock.0/@expressions.3">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4/@leftEntity"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.5">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4/@rightEntity"/>
+      </bindings>
+    </relations>
+    <relations name="execTime_regulator_13NonStrictPrecedes_minExecTime">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4"/>
+      <bindings bindable="//@subBlock.0/@expressions.4">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4/@leftEntity"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.4">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4/@rightEntity"/>
+      </bindings>
+    </relations>
+    <relations name="execTime_sensor1_14NonStrictPrecedes_minExecTime">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4"/>
+      <bindings bindable="//@subBlock.0/@expressions.5">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4/@leftEntity"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.6">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4/@rightEntity"/>
+      </bindings>
+    </relations>
+    <relations name="execTime_tempActuator_12NonStrictPrecedes_maxExecTime">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4"/>
+      <bindings bindable="//@subBlock.0/@elements.5">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4/@leftEntity"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@expressions.6">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4/@rightEntity"/>
+      </bindings>
+    </relations>
+    <relations name="execTime_regulator_13NonStrictPrecedes_maxExecTime">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4"/>
+      <bindings bindable="//@subBlock.0/@elements.4">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4/@leftEntity"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@expressions.7">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4/@rightEntity"/>
+      </bindings>
+    </relations>
+    <relations name="execTime_sensor1_14NonStrictPrecedes_maxExecTime">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4"/>
+      <bindings bindable="//@subBlock.0/@elements.6">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4/@leftEntity"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@expressions.8">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.4/@rightEntity"/>
+      </bindings>
+    </relations>
+    <expressions name="trigg_CmdHeater_9intermediate_evt_port_write1">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@expressionLibraries.0/@expressionDeclarations.5"/>
+      <bindings bindable="//@subBlock.0/@elements.9">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@expressionLibraries.0/@expressionDeclarations.5/@clock1"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.9">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@expressionLibraries.0/@expressionDeclarations.5/@clock2"/>
+      </bindings>
+    </expressions>
+    <expressions name="trigger_TempSensor_10_PeriodicOffsetP_periodicStart">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.0"/>
+      <bindings bindable="//@subBlock.0/@elements.0">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.0/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.11">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.0/@parameters.1"/>
+      </bindings>
+    </expressions>
+    <expressions name="trigg_Regulator_11_PeriodicOffsetP_periodicStart">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.0"/>
+      <bindings bindable="//@subBlock.0/@elements.0">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.0/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.12">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.0/@parameters.1"/>
+      </bindings>
+    </expressions>
+    <expressions name="execTime_tempActuator_12_DelayFor_startDelayedByMin">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3"/>
+      <bindings bindable="//@subBlock.0/@elements.2">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.0">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.1"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.13">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.2"/>
+      </bindings>
+    </expressions>
+    <expressions name="execTime_regulator_13_DelayFor_startDelayedByMin">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3"/>
+      <bindings bindable="//@subBlock.0/@elements.1">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.0">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.1"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.14">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.2"/>
+      </bindings>
+    </expressions>
+    <expressions name="execTime_sensor1_14_DelayFor_startDelayedByMin">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3"/>
+      <bindings bindable="//@subBlock.0/@elements.3">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.0">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.1"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.15">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.2"/>
+      </bindings>
+    </expressions>
+    <expressions name="execTime_tempActuator_12_DelayFor_startDelayedByMax">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3"/>
+      <bindings bindable="//@subBlock.0/@elements.2">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.0">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.1"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.16">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.2"/>
+      </bindings>
+    </expressions>
+    <expressions name="execTime_regulator_13_DelayFor_startDelayedByMax">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3"/>
+      <bindings bindable="//@subBlock.0/@elements.1">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.0">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.1"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.17">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.2"/>
+      </bindings>
+    </expressions>
+    <expressions name="execTime_sensor1_14_DelayFor_startDelayedByMax">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3"/>
+      <bindings bindable="//@subBlock.0/@elements.3">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.0">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.1"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.18">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.2"/>
+      </bindings>
+    </expressions>
+  </subBlock>
+  <subBlock name="emptyBlock"/>
+  <imports importURI="platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib" alias="kernel"/>
+  <imports importURI="platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib" alias="CCSL"/>
+  <imports importURI="platform:/resource/fr.inria.aoste.eastadl.tests/test1/MyFirstEastAdlModel.systemmodeling" alias="SystemModel"/>
+  <imports importURI="platform:/resource/fr.inria.aoste.eastadl.tests/test1/MyFirstEastAdlModel.systemmodeling" alias="SystemModel"/>
+  <imports importURI="platform:/resource/fr.inria.aoste.eastadl.tests/test1/MyFirstEastAdlModel.systemmodeling" alias="SystemModel"/>
+</fr.inria.aoste.timemodel.ccslmodel:ClockConstraintSystem>

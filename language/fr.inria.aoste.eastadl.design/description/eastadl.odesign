@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="eastadl" version="9.0.0">
+  <ownedViewpoints name="EAST-ADL">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="EAST_package" initialisation="true" domainClass="elements.EAPackage">
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/behavior"/>
+      <metamodel href="http://east-adl.info/2.1.10/eastadl21#//east_adl/elements"/>
+      <metamodel href="http://east-adl.info/2.1.10/eastadl21#//east_adl/elements/_instanceref"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/structure"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/structure/functionmodeling"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/structure/functionmodeling/_instanceref"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/structure/systemmodeling"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/structure/vehiclefeaturemodeling"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/timing"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/timing/_instanceref"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/timing/timingconstraints"/>
+      <defaultLayer name="AnalysisFunctionType">
+        <edgeMappings name="triggerToFunctionPrototype" sourceMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='FunctionTrigger']" targetMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='AnalysisFunctionType']/@subContainerMappings[name='AnalysisFunctionPrototype_Import1'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@subContainerMappings[name='internalFunctionPrototype']" targetFinderExpression="[self.functionPrototype/]">
+          <conditionnalStyles predicateExpression="[self.triggerPolicy = TriggerPolicyKind::TIME/]">
+            <style targetArrow="InputFillClosedArrow" sizeComputationExpression="1">
+              <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              <centerLabelStyleDescription>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </centerLabelStyleDescription>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[self.triggerPolicy = TriggerPolicyKind::EVENT/]">
+            <style targetArrow="InputFillClosedArrow" sizeComputationExpression="1">
+              <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+              <centerLabelStyleDescription>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </centerLabelStyleDescription>
+            </style>
+          </conditionnalStyles>
+        </edgeMappings>
+        <edgeMappings name="FunctionConnector" preconditionExpression="[(sourceView.eContainer().eContainer() = targetView.eContainer().eContainer()) and (targetView.eContainer() &lt;> sourceView.eContainer())/]" sourceMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@borderedNodeMappings[name='ProxyPorts']" targetMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@borderedNodeMappings[name='ProxyPorts']" targetFinderExpression="[self.port->at(2).functionPortProxy/]" sourceFinderExpression="[self.port->first().functionPortProxy/]" domainClass="functionmodeling.FunctionConnector" useDomainElement="true">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="AnalysisFunctionType" domainClass="functionmodeling.AnalysisFunctionType">
+          <borderedNodeMappings name="FunctionFlowPort_root" semanticCandidatesExpression="[self.port/]" domainClass="functionmodeling.FunctionFlowPort">
+            <conditionnalStyles predicateExpression="[self.direction = EADirectionKind::_in/]">
+              <style xsi:type="style:SquareDescription" showIcon="false" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[self.direction = EADirectionKind::out/]">
+              <style xsi:type="style:SquareDescription" showIcon="false" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[self.direction = EADirectionKind::inout/]">
+              <style xsi:type="style:SquareDescription" showIcon="false" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <subContainerMappings xsi:type="description_1:ContainerMappingImport" name="AnalysisFunctionPrototype_Import1" semanticCandidatesExpression="[self.part/]" reusedBorderedNodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@borderedNodeMappings[name='ProxyPorts']" importedMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']">
+            <subNodeMappings name="ExecutionTime" preconditionExpression="[self.targetFunctionPrototype = container/]" domainClass="timing.ExecutionTimeConstraint">
+              <style xsi:type="style:NoteDescription" showIcon="false" labelExpression="['[' +self.lower.value +' ; '+ self.upper.value +']'/]" labelPosition="node" resizeKind="NSEW" color="//@userColorsPalettes[name='EASTADL_color']/@entries[name='very_light_red']">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subNodeMappings>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" foregroundColor="//@userColorsPalettes[name='EASTADL_color']/@entries[name='very_light_red']">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="FunctionTrigger" domainClass="behavior.FunctionTrigger">
+          <conditionnalStyles predicateExpression="[self.triggerPolicy = TriggerPolicyKind::EVENT/]">
+            <style xsi:type="style:ShapeContainerStyleDescription" arcWidth="4" arcHeight="4" showIcon="false" labelExpression="['event trigger on: '+ self.port.name/]" roundedCorner="true" widthComputationExpression="[20+(self.port->size()*15)/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[self.triggerPolicy = TriggerPolicyKind::TIME/]">
+            <style xsi:type="style:ShapeContainerStyleDescription" arcWidth="4" arcHeight="4" showIcon="false" labelExpression="['time trigger every: '+ self.triggerCondition/]" roundedCorner="true" widthComputationExpression="[24+(self.triggerCondition->size())/]">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </conditionnalStyles>
+        </containerMappings>
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="AnalysisFunctionType" containerMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='AnalysisFunctionType']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="functionmodeling.AnalysisFunctionType" referenceName="element">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['AnalysisFunctionType'+self.eContainer().oclAsType(EAPackage).element->select(e | e.oclIsKindOf(AnalysisFunctionType))->size()/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="AnalysisFunctionPrototype" containerMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@subContainerMappings[name='internalFunctionPrototype'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='AnalysisFunctionType']/@subContainerMappings[name='AnalysisFunctionPrototype_Import1']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="functionmodeling.AnalysisFunctionPrototype" referenceName="part">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['AnalysisFunctionPrototype'+self.eContainer().oclAsType(AnalysisFunctionType).part->size()/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="InputPort" nodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='AnalysisFunctionType']/@borderedNodeMappings[name='FunctionFlowPort_root']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="functionmodeling.FunctionFlowPort" referenceName="port">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['ip'+self.eContainer().oclAsType(AnalysisFunctionType).port->size()/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="OutputPort" nodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='AnalysisFunctionType']/@borderedNodeMappings[name='FunctionFlowPort_root']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="functionmodeling.FunctionFlowPort" referenceName="port">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['op'+self.eContainer().oclAsType(AnalysisFunctionType).port->size()/]"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="direction" valueExpression="[EADirectionKind::_out/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Connector" edgeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@edgeMappings[name='FunctionConnector']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[source.eContainer().eContainer()/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="functionmodeling.FunctionConnector" referenceName="connector">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['c'+self.eContainer().oclAsType(AnalysisFunctionType).connector->size()/]"/>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[instance/]">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="_instanceref.FunctionConnector_port" referenceName="port">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="functionPortProxy" valueExpression="[source/]"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="functionPort" valueExpression="[source.port/]"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="functionPrototype" valueExpression="[source.eContainer()/]"/>
+                    </subModelOperations>
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="_instanceref.FunctionConnector_port" referenceName="port">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="functionPortProxy" valueExpression="[target/]"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="functionPort" valueExpression="[target.port/]"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="functionPrototype" valueExpression="[target.eContainer()/]"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="InputProxyPort" nodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@borderedNodeMappings[name='ProxyPorts']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="functionmodeling.FunctionFlowPortProxy" referenceName="proxyPorts">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['pp'+self.eContainer().oclAsType(AnalysisFunctionPrototype).proxyPorts->size()/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="OutputProxyPort" nodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@borderedNodeMappings[name='ProxyPorts']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="functionmodeling.FunctionFlowPortProxy" referenceName="proxyPorts">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['pp'+self.eContainer().oclAsType(AnalysisFunctionPrototype).proxyPorts->size()/]"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="direction" valueExpression="[EADirectionKind::_out/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Trigger" extraMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='AnalysisFunctionType']/@subContainerMappings[name='AnalysisFunctionPrototype_Import1'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@subContainerMappings[name='internalFunctionPrototype']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:Switch">
+                <cases conditionExpression="[container.oclAsType(AnalysisFunctionPrototype).type.oclAsType(AnalysisFunctionType).eContainer().oclAsType(EAPackage).element->exists(e|e.oclIsKindOf(Behavior))/]">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container.oclAsType(AnalysisFunctionPrototype).type.oclAsType(AnalysisFunctionType).eContainer().oclAsType(EAPackage).element->select(e|e.oclIsKindOf(Behavior))->first()/]">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="behavior.FunctionTrigger" referenceName="functionTrigger">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['trigger'+self.eContainer().oclAsType(Behavior).functionTrigger->size()/]"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="function" valueExpression="[container.oclAsType(AnalysisFunctionPrototype).type/]"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="functionPrototype" valueExpression="[container/]"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </cases>
+                <default>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container.oclAsType(AnalysisFunctionPrototype).type.oclAsType(AnalysisFunctionType).eContainer().oclAsType(EAPackage)/]">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="behavior.Behavior" referenceName="element">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['behavior'+self.eContainer().oclAsType(EAPackage).element->select(e|e.oclIsKindOf(Behavior))->size()/]"/>
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="behavior.FunctionTrigger" referenceName="functionTrigger">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['trigger'+self.eContainer().oclAsType(Behavior).functionTrigger->size()/]"/>
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="function" valueExpression="[container.oclAsType(AnalysisFunctionPrototype).type/]"/>
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="functionPrototype" valueExpression="[container/]"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </default>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="execTime" nodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@subContainerMappings[name='internalFunctionPrototype']/@subNodeMappings[name='ExecTime'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='AnalysisFunctionType']/@subContainerMappings[name='AnalysisFunctionPrototype_Import1']/@subNodeMappings[name='ExecutionTime']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:Switch">
+                <cases conditionExpression="[container.oclAsType(AnalysisFunctionPrototype).type.eContainer().oclAsType(EAPackage).element->exists(e|e.oclIsKindOf(Timing))/]">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container.oclAsType(AnalysisFunctionPrototype).type.eContainer().oclAsType(EAPackage).element->select(e|e.oclIsKindOf(Timing))->first()/]">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="timing.ExecutionTimeConstraint" referenceName="timingConstraint">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['WB_CET'+self.eContainer().oclAsType(Timing).timingConstraint->size()/]"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="targetFunctionPrototype" valueExpression="[container/]"/>
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="timing.TimeDuration" referenceName="lower">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="1.0"/>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="timing.TimeDuration" referenceName="upper">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="2.0"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </cases>
+                <default>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container.oclAsType(AnalysisFunctionPrototype).type.eContainer().oclAsType(EAPackage)/]">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="timing.Timing" referenceName="element">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['timing'+self.eContainer().oclAsType(EAPackage).element->select(e|e.oclIsKindOf(Timing))->size()/]"/>
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="timing.ExecutionTimeConstraint" referenceName="timingConstraint">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['execTime'+self.eContainer().oclAsType(Timing).timingConstraint->size()/]"/>
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="targetFunctionPrototype" valueExpression="[container/]"/>
+                        <subModelOperations xsi:type="tool_1:CreateInstance" typeName="timing.TimeDuration" referenceName="lower">
+                          <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="1.0"/>
+                        </subModelOperations>
+                        <subModelOperations xsi:type="tool_1:CreateInstance" typeName="timing.TimeDuration" referenceName="upper">
+                          <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="2.0"/>
+                        </subModelOperations>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </default>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+      <additionalLayers name="eventChains">
+        <edgeMappings name="EventChains" sourceMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@borderedNodeMappings[name='ProxyPorts'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='AnalysisFunctionType']/@borderedNodeMappings[name='FunctionFlowPort_root']" targetMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@borderedNodeMappings[name='ProxyPorts'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='AnalysisFunctionType']/@borderedNodeMappings[name='FunctionFlowPort_root']" targetFinderExpression="[self.response.oclAsType(eastadl21::east_adl::timing::events::EventFunctionFlowPort).port.functionPrototype.proxyPorts->select(pp | self.response.oclAsType(eastadl21::east_adl::timing::events::EventFunctionFlowPort).port.functionFlowPort->first() = pp.port)->first()/]" sourceFinderExpression="[self.stimulus.oclAsType(eastadl21::east_adl::timing::events::EventFunctionFlowPort).port.functionPrototype.proxyPorts->select(pp | self.stimulus.oclAsType(eastadl21::east_adl::timing::events::EventFunctionFlowPort).port.functionFlowPort->first() = pp.port)->first()/]" domainClass="timing.EventChain" useDomainElement="true">
+          <style lineStyle="dash" sizeComputationExpression="2" routingStyle="manhattan">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+            <centerLabelStyleDescription showIcon="false">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+      </additionalLayers>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="EAST_functional_analysis_architecture" initialisation="true" showOnStartup="true" domainClass="systemmodeling.AnalysisLevel">
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/behavior"/>
+      <metamodel href="http://east-adl.info/2.1.10/eastadl21#//east_adl/elements"/>
+      <metamodel href="http://east-adl.info/2.1.10/eastadl21#//east_adl/elements/_instanceref"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/structure"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/structure/functionmodeling"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/structure/functionmodeling/_instanceref"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/structure/systemmodeling"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/structure/vehiclefeaturemodeling"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/timing"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/timing/_instanceref"/>
+      <metamodel href="../../fr.inria.aoste.eastadl.model/model/eastadl2110.ecore#//east_adl/timing/timingconstraints"/>
+      <defaultLayer name="AnalysisFunctionPrototype">
+        <edgeMappingImports name="ConnectorImport" importedMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@edgeMappings[name='FunctionConnector']"/>
+        <containerMappings name="AnaysisFunctionPrototype" semanticCandidatesExpression="[self.functionalAnalysisArchitecture/]" domainClass="functionmodeling.AnalysisFunctionPrototype">
+          <borderedNodeMappings name="ProxyPorts" semanticCandidatesExpression="[self.proxyPorts/]" domainClass="functionmodeling.FunctionFlowPortProxy">
+            <style xsi:type="style:LozengeNodeDescription" labelExpression="[self.port.name/]" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="[self.port.oclAsType(FunctionFlowPort).direction = EADirectionKind::_in/]">
+              <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="[self.port.name/]" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[self.port.oclAsType(FunctionFlowPort).direction = EADirectionKind::out/]">
+              <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="[self.port.name/]" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="[self.port.oclAsType(FunctionFlowPort).direction = EADirectionKind::inout/]">
+              <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="[self.port.name/]" sizeComputationExpression="2">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <subContainerMappings xsi:type="description_1:ContainerMappingImport" name="FunctionTrigger_Import1" preconditionExpression="[self.functionPrototype = container.oclAsType(AnalysisFunctionPrototype)/]" domainClass="behavior.FunctionTrigger" importedMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='FunctionTrigger']"/>
+          <subContainerMappings xsi:type="description_1:ContainerMappingImport" name="internalFunctionPrototype" semanticCandidatesExpression="[self.type.part/]" domainClass="functionmodeling.AnalysisFunctionPrototype" reusedBorderedNodeMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@borderedNodeMappings[name='ProxyPorts']" importedMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='AnalysisFunctionType']/@subContainerMappings[name='AnalysisFunctionPrototype_Import1']">
+            <subNodeMappings xsi:type="description_1:NodeMappingImport" name="ExecTime" preconditionExpression="[self.targetFunctionPrototype = container/]" domainClass="timing.ExecutionTimeConstraint" importedMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='AnalysisFunctionType']/@subContainerMappings[name='AnalysisFunctionPrototype_Import1']/@subNodeMappings[name='ExecutionTime']"/>
+            <subContainerMappings xsi:type="description_1:ContainerMappingImport" name="FunctionTrigger_Import2" preconditionExpression="[self.functionPrototype = container.oclAsType(AnalysisFunctionPrototype)/]" importedMapping="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='FunctionTrigger']"/>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" labelSize="9" showIcon="false" labelExpression="[self.name +':'+ self.type.name/]">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="tools">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="AnalysisFunctionPrototype" containerMappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@subContainerMappings[name='internalFunctionPrototype'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='AnalysisFunctionType']/@subContainerMappings[name='AnalysisFunctionPrototype_Import1']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="functionmodeling.AnalysisFunctionPrototype" referenceName="functionalAnalysisArchitecture">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['rootAnalysisFunctionPrototype'/]"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+      <additionalLayers name="Debug" activeByDefault="true">
+        <toolSections name="Debug">
+          <ownedTools xsi:type="tool_1:PopupMenu" name="Gemoc">
+            <menuItemDescription xsi:type="tool_1:OperationAction" name="Debug" icon="/org.gemoc.gemoc_modeling_workbench.ui/icons/debug_exc.gif">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ExternalJavaAction" name="Debug" icon="/org.gemoc.gemoc_modeling_workbench.ui/icons/debug_exc.gif" id="org.gemoc.gemoc_modeling_workbench.ui.debug.sirius.action.gemocDebugAs"/>
+              </initialOperation>
+            </menuItemDescription>
+            <menuItemDescription xsi:type="tool_1:OperationAction" name="Toggle breakpoint" icon="/org.gemoc.gemoc_modeling_workbench.ui/icons/debug_exc.gif">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ExternalJavaAction" name="Toggle Gemoc breakpoint" icon="/org.gemoc.gemoc_modeling_workbench.ui/icons/breakpoint.gif" id="org.gemoc.gemoc_modeling_workbench.ui.debug.sirius.action.gemocToggleBreakpoint"/>
+              </initialOperation>
+            </menuItemDescription>
+          </ownedTools>
+        </toolSections>
+        <decorationDescriptionsSet>
+          <decorationDescriptions xsi:type="description_1:MappingBasedDecoration" name="Enabled breakpoint" position="WEST" decoratorPath="/org.gemoc.gemoc_modeling_workbench.ui/icons/breakpoint_enabled.gif" preconditionExpression="service:self.hasEnabledBreakpoint" mappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@borderedNodeMappings[name='ProxyPorts'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@subContainerMappings[name='FunctionTrigger_Import1'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@subContainerMappings[name='internalFunctionPrototype'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@subContainerMappings[name='internalFunctionPrototype']/@subNodeMappings[name='ExecTime'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@subContainerMappings[name='internalFunctionPrototype']/@subContainerMappings[name='FunctionTrigger_Import2']"/>
+          <decorationDescriptions xsi:type="description_1:MappingBasedDecoration" name="Disabled breakpoint" position="WEST" decoratorPath="/org.gemoc.gemoc_modeling_workbench.ui/icons/breakpoint_disabled.gif" preconditionExpression="service:self.hasDisabledBreakpoint" mappings="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@borderedNodeMappings[name='ProxyPorts'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@subContainerMappings[name='FunctionTrigger_Import1'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@subContainerMappings[name='internalFunctionPrototype'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@subContainerMappings[name='internalFunctionPrototype']/@subNodeMappings[name='ExecTime'] //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@subContainerMappings[name='internalFunctionPrototype']/@subContainerMappings[name='FunctionTrigger_Import2']"/>
+        </decorationDescriptionsSet>
+        <customization>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="service:self.isCurrentInstruction">
+            <featureCustomizations xsi:type="description:EReferenceCustomization" applyOnAll="true" referenceName="borderColor" value="//@userColorsPalettes[name='EAST_functional_analysis_architecture%20Palette']/@entries[name='current%20instruction']"/>
+            <featureCustomizations xsi:type="description:EReferenceCustomization" applyOnAll="true" referenceName="strokeColor" value="//@userColorsPalettes[name='EAST_functional_analysis_architecture%20Palette']/@entries[name='current%20instruction']"/>
+            <featureCustomizations xsi:type="description:EReferenceCustomization" applyOnAll="true" referenceName="labelColor" value="//@userColorsPalettes[name='EAST_functional_analysis_architecture%20Palette']/@entries[name='current%20instruction']"/>
+          </vsmElementCustomizations>
+        </customization>
+      </additionalLayers>
+      <additionalLayers name="Animation" activeByDefault="true">
+        <customization>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="service:self.hasBeenActivated">
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@style" referenceName="foregroundColor">
+              <value href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+            </featureCustomizations>
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@borderedNodeMappings[name='ProxyPorts']/@conditionnalStyles.1/@style //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='AnalysisFunctionType']/@borderedNodeMappings[name='FunctionFlowPort_root']/@conditionnalStyles.1/@style" referenceName="color">
+              <value href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+            </featureCustomizations>
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_package']/@defaultLayer/@containerMappings[name='AnalysisFunctionType']/@borderedNodeMappings[name='FunctionFlowPort_root']/@conditionnalStyles.0/@style //@ownedViewpoints[name='EAST-ADL']/@ownedRepresentations[name='EAST_functional_analysis_architecture']/@defaultLayer/@containerMappings[name='AnaysisFunctionPrototype']/@borderedNodeMappings[name='ProxyPorts']/@conditionnalStyles.0/@style" referenceName="color">
+              <value href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+            </featureCustomizations>
+          </vsmElementCustomizations>
+        </customization>
+      </additionalLayers>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="fr.inria.aoste.eastadl.design.services.EastFunctionalAnalysisArchitectureDebugServices"/>
+    <ownedJavaExtensions qualifiedClassName="fr.inria.aoste.eastadl.design.services.EastFunctionalAnalysisArchitectureAnimatorServices"/>
+  </ownedViewpoints>
+  <userColorsPalettes name="EASTADL_color">
+    <entries xsi:type="description:UserFixedColor" red="255" green="217" blue="217" name="very_light_red"/>
+  </userColorsPalettes>
+  <userColorsPalettes name="EAST_functional_analysis_architecture Palette">
+    <entries xsi:type="description:UserFixedColor" red="255" green="255" blue="0" name="current instruction"/>
+  </userColorsPalettes>
+</description:Group>

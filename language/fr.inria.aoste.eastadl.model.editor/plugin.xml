@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.systemmodeling.presentation.SystemmodelingModelWizardID"
+            name="%_UI_SystemmodelingModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.systemmodeling.presentation.SystemmodelingModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SystemmodelingModelFile.gif">
+         <description>%_UI_SystemmodelingModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.systemmodeling.presentation.SystemmodelingEditorID"
+            name="%_UI_SystemmodelingEditor_label"
+            icon="icons/full/obj16/SystemmodelingModelFile.gif"
+            extensions="systemmodeling"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.systemmodeling.presentation.SystemmodelingEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.systemmodeling.presentation.SystemmodelingActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.featuremodeling.presentation.FeaturemodelingModelWizardID"
+            name="%_UI_FeaturemodelingModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.featuremodeling.presentation.FeaturemodelingModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/FeaturemodelingModelFile.gif">
+         <description>%_UI_FeaturemodelingModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.featuremodeling.presentation.FeaturemodelingEditorID"
+            name="%_UI_FeaturemodelingEditor_label"
+            icon="icons/full/obj16/FeaturemodelingModelFile.gif"
+            extensions="featuremodeling"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.featuremodeling.presentation.FeaturemodelingEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.featuremodeling.presentation.FeaturemodelingActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.vehiclefeaturemodeling.presentation.VehiclefeaturemodelingModelWizardID"
+            name="%_UI_VehiclefeaturemodelingModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.vehiclefeaturemodeling.presentation.VehiclefeaturemodelingModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/VehiclefeaturemodelingModelFile.gif">
+         <description>%_UI_VehiclefeaturemodelingModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.vehiclefeaturemodeling.presentation.VehiclefeaturemodelingEditorID"
+            name="%_UI_VehiclefeaturemodelingEditor_label"
+            icon="icons/full/obj16/VehiclefeaturemodelingModelFile.gif"
+            extensions="vehiclefeaturemodeling"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.vehiclefeaturemodeling.presentation.VehiclefeaturemodelingEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.vehiclefeaturemodeling.presentation.VehiclefeaturemodelingActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.functionmodeling.presentation.FunctionmodelingModelWizardID"
+            name="%_UI_FunctionmodelingModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.functionmodeling.presentation.FunctionmodelingModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/FunctionmodelingModelFile.gif">
+         <description>%_UI_FunctionmodelingModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.functionmodeling.presentation.FunctionmodelingEditorID"
+            name="%_UI_FunctionmodelingEditor_label"
+            icon="icons/full/obj16/FunctionmodelingModelFile.gif"
+            extensions="functionmodeling"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.functionmodeling.presentation.FunctionmodelingEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.functionmodeling.presentation.FunctionmodelingActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.functionmodeling._instanceref.presentation._instancerefModelWizardID"
+            name="%_UI__instancerefModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.functionmodeling._instanceref.presentation._instancerefModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/_instancerefModelFile.gif">
+         <description>%_UI__instancerefModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.functionmodeling._instanceref.presentation._instancerefEditorID"
+            name="%_UI__instancerefEditor_label"
+            icon="icons/full/obj16/_instancerefModelFile.gif"
+            extensions="_instanceref"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.functionmodeling._instanceref.presentation._instancerefEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.functionmodeling._instanceref.presentation._instancerefActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.hardwaremodeling.presentation.HardwaremodelingModelWizardID"
+            name="%_UI_HardwaremodelingModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.hardwaremodeling.presentation.HardwaremodelingModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/HardwaremodelingModelFile.gif">
+         <description>%_UI_HardwaremodelingModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.hardwaremodeling.presentation.HardwaremodelingEditorID"
+            name="%_UI_HardwaremodelingEditor_label"
+            icon="icons/full/obj16/HardwaremodelingModelFile.gif"
+            extensions="hardwaremodeling"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.hardwaremodeling.presentation.HardwaremodelingEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.hardwaremodeling.presentation.HardwaremodelingActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.hardwaremodeling._instanceref.presentation._instancerefModelWizardID"
+            name="%_UI__instancerefModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.hardwaremodeling._instanceref.presentation._instancerefModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/_instancerefModelFile.gif">
+         <description>%_UI__instancerefModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.hardwaremodeling._instanceref.presentation._instancerefEditorID"
+            name="%_UI__instancerefEditor_label"
+            icon="icons/full/obj16/_instancerefModelFile.gif"
+            extensions="_instanceref"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.hardwaremodeling._instanceref.presentation._instancerefEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.structure.hardwaremodeling._instanceref.presentation._instancerefActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.behavior.presentation.BehaviorModelWizardID"
+            name="%_UI_BehaviorModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.behavior.presentation.BehaviorModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/BehaviorModelFile.gif">
+         <description>%_UI_BehaviorModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.behavior.presentation.BehaviorEditorID"
+            name="%_UI_BehaviorEditor_label"
+            icon="icons/full/obj16/BehaviorModelFile.gif"
+            extensions="behavior"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.behavior.presentation.BehaviorEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.behavior.presentation.BehaviorActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.variability.presentation.VariabilityModelWizardID"
+            name="%_UI_VariabilityModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.variability.presentation.VariabilityModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/VariabilityModelFile.gif">
+         <description>%_UI_VariabilityModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.variability.presentation.VariabilityEditorID"
+            name="%_UI_VariabilityEditor_label"
+            icon="icons/full/obj16/VariabilityModelFile.gif"
+            extensions="variability"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.variability.presentation.VariabilityEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.variability.presentation.VariabilityActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements.presentation.RequirementsModelWizardID"
+            name="%_UI_RequirementsModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements.presentation.RequirementsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RequirementsModelFile.gif">
+         <description>%_UI_RequirementsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements.presentation.RequirementsEditorID"
+            name="%_UI_RequirementsEditor_label"
+            icon="icons/full/obj16/RequirementsModelFile.gif"
+            extensions="requirements"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements.presentation.RequirementsEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements.presentation.RequirementsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements._instanceref.presentation._instancerefModelWizardID"
+            name="%_UI__instancerefModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements._instanceref.presentation._instancerefModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/_instancerefModelFile.gif">
+         <description>%_UI__instancerefModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements._instanceref.presentation._instancerefEditorID"
+            name="%_UI__instancerefEditor_label"
+            icon="icons/full/obj16/_instancerefModelFile.gif"
+            extensions="_instanceref"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements._instanceref.presentation._instancerefEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements._instanceref.presentation._instancerefActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements.usecases.presentation.UsecasesModelWizardID"
+            name="%_UI_UsecasesModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements.usecases.presentation.UsecasesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/UsecasesModelFile.gif">
+         <description>%_UI_UsecasesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements.usecases.presentation.UsecasesEditorID"
+            name="%_UI_UsecasesEditor_label"
+            icon="icons/full/obj16/UsecasesModelFile.gif"
+            extensions="usecases"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements.usecases.presentation.UsecasesEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements.usecases.presentation.UsecasesActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements.verificationvalidation.presentation.VerificationvalidationModelWizardID"
+            name="%_UI_VerificationvalidationModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements.verificationvalidation.presentation.VerificationvalidationModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/VerificationvalidationModelFile.gif">
+         <description>%_UI_VerificationvalidationModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements.verificationvalidation.presentation.VerificationvalidationEditorID"
+            name="%_UI_VerificationvalidationEditor_label"
+            icon="icons/full/obj16/VerificationvalidationModelFile.gif"
+            extensions="verificationvalidation"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements.verificationvalidation.presentation.VerificationvalidationEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.requirements.verificationvalidation.presentation.VerificationvalidationActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.environment.presentation.EnvironmentModelWizardID"
+            name="%_UI_EnvironmentModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.environment.presentation.EnvironmentModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/EnvironmentModelFile.gif">
+         <description>%_UI_EnvironmentModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.environment.presentation.EnvironmentEditorID"
+            name="%_UI_EnvironmentEditor_label"
+            icon="icons/full/obj16/EnvironmentModelFile.gif"
+            extensions="environment"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.environment.presentation.EnvironmentEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.environment.presentation.EnvironmentActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.environment._instanceref.presentation._instancerefModelWizardID"
+            name="%_UI__instancerefModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.environment._instanceref.presentation._instancerefModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/_instancerefModelFile.gif">
+         <description>%_UI__instancerefModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.environment._instanceref.presentation._instancerefEditorID"
+            name="%_UI__instancerefEditor_label"
+            icon="icons/full/obj16/_instancerefModelFile.gif"
+            extensions="_instanceref"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.environment._instanceref.presentation._instancerefEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.environment._instanceref.presentation._instancerefActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.interchange.presentation.InterchangeModelWizardID"
+            name="%_UI_InterchangeModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.interchange.presentation.InterchangeModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/InterchangeModelFile.gif">
+         <description>%_UI_InterchangeModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.interchange.presentation.InterchangeEditorID"
+            name="%_UI_InterchangeEditor_label"
+            icon="icons/full/obj16/InterchangeModelFile.gif"
+            extensions="interchange"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.interchange.presentation.InterchangeEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.interchange.presentation.InterchangeActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.presentation.TimingModelWizardID"
+            name="%_UI_TimingModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.presentation.TimingModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/TimingModelFile.gif">
+         <description>%_UI_TimingModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.presentation.TimingEditorID"
+            name="%_UI_TimingEditor_label"
+            icon="icons/full/obj16/TimingModelFile.gif"
+            extensions="timing"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.presentation.TimingEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.presentation.TimingActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing._instanceref.presentation._instancerefModelWizardID"
+            name="%_UI__instancerefModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing._instanceref.presentation._instancerefModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/_instancerefModelFile.gif">
+         <description>%_UI__instancerefModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing._instanceref.presentation._instancerefEditorID"
+            name="%_UI__instancerefEditor_label"
+            icon="icons/full/obj16/_instancerefModelFile.gif"
+            extensions="_instanceref"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing._instanceref.presentation._instancerefEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing._instanceref.presentation._instancerefActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.events.presentation.EventsModelWizardID"
+            name="%_UI_EventsModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.events.presentation.EventsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/EventsModelFile.gif">
+         <description>%_UI_EventsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.events.presentation.EventsEditorID"
+            name="%_UI_EventsEditor_label"
+            icon="icons/full/obj16/EventsModelFile.gif"
+            extensions="events"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.events.presentation.EventsEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.events.presentation.EventsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.events._instanceref.presentation._instancerefModelWizardID"
+            name="%_UI__instancerefModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.events._instanceref.presentation._instancerefModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/_instancerefModelFile.gif">
+         <description>%_UI__instancerefModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.events._instanceref.presentation._instancerefEditorID"
+            name="%_UI__instancerefEditor_label"
+            icon="icons/full/obj16/_instancerefModelFile.gif"
+            extensions="_instanceref"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.events._instanceref.presentation._instancerefEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.events._instanceref.presentation._instancerefActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.timingconstraints.presentation.TimingconstraintsModelWizardID"
+            name="%_UI_TimingconstraintsModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.timingconstraints.presentation.TimingconstraintsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/TimingconstraintsModelFile.gif">
+         <description>%_UI_TimingconstraintsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.timingconstraints.presentation.TimingconstraintsEditorID"
+            name="%_UI_TimingconstraintsEditor_label"
+            icon="icons/full/obj16/TimingconstraintsModelFile.gif"
+            extensions="timingconstraints"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.timingconstraints.presentation.TimingconstraintsEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.timing.timingconstraints.presentation.TimingconstraintsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.presentation.DependabilityModelWizardID"
+            name="%_UI_DependabilityModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.presentation.DependabilityModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DependabilityModelFile.gif">
+         <description>%_UI_DependabilityModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.presentation.DependabilityEditorID"
+            name="%_UI_DependabilityEditor_label"
+            icon="icons/full/obj16/DependabilityModelFile.gif"
+            extensions="dependability"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.presentation.DependabilityEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.presentation.DependabilityActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetyconstraints.presentation.SafetyconstraintsModelWizardID"
+            name="%_UI_SafetyconstraintsModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetyconstraints.presentation.SafetyconstraintsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SafetyconstraintsModelFile.gif">
+         <description>%_UI_SafetyconstraintsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetyconstraints.presentation.SafetyconstraintsEditorID"
+            name="%_UI_SafetyconstraintsEditor_label"
+            icon="icons/full/obj16/SafetyconstraintsModelFile.gif"
+            extensions="safetyconstraints"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetyconstraints.presentation.SafetyconstraintsEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetyconstraints.presentation.SafetyconstraintsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetyconstraints._instanceref.presentation._instancerefModelWizardID"
+            name="%_UI__instancerefModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetyconstraints._instanceref.presentation._instancerefModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/_instancerefModelFile.gif">
+         <description>%_UI__instancerefModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetyconstraints._instanceref.presentation._instancerefEditorID"
+            name="%_UI__instancerefEditor_label"
+            icon="icons/full/obj16/_instancerefModelFile.gif"
+            extensions="_instanceref"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetyconstraints._instanceref.presentation._instancerefEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetyconstraints._instanceref.presentation._instancerefActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.errormodel.presentation.ErrormodelModelWizardID"
+            name="%_UI_ErrormodelModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.errormodel.presentation.ErrormodelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ErrormodelModelFile.gif">
+         <description>%_UI_ErrormodelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.errormodel.presentation.ErrormodelEditorID"
+            name="%_UI_ErrormodelEditor_label"
+            icon="icons/full/obj16/ErrormodelModelFile.gif"
+            extensions="errormodel"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.errormodel.presentation.ErrormodelEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.errormodel.presentation.ErrormodelActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.errormodel._instanceref.presentation._instancerefModelWizardID"
+            name="%_UI__instancerefModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.errormodel._instanceref.presentation._instancerefModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/_instancerefModelFile.gif">
+         <description>%_UI__instancerefModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.errormodel._instanceref.presentation._instancerefEditorID"
+            name="%_UI__instancerefEditor_label"
+            icon="icons/full/obj16/_instancerefModelFile.gif"
+            extensions="_instanceref"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.errormodel._instanceref.presentation._instancerefEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.errormodel._instanceref.presentation._instancerefActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetyrequirement.presentation.SafetyrequirementModelWizardID"
+            name="%_UI_SafetyrequirementModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetyrequirement.presentation.SafetyrequirementModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SafetyrequirementModelFile.gif">
+         <description>%_UI_SafetyrequirementModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetyrequirement.presentation.SafetyrequirementEditorID"
+            name="%_UI_SafetyrequirementEditor_label"
+            icon="icons/full/obj16/SafetyrequirementModelFile.gif"
+            extensions="safetyrequirement"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetyrequirement.presentation.SafetyrequirementEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetyrequirement.presentation.SafetyrequirementActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetycase.presentation.SafetycaseModelWizardID"
+            name="%_UI_SafetycaseModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetycase.presentation.SafetycaseModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SafetycaseModelFile.gif">
+         <description>%_UI_SafetycaseModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetycase.presentation.SafetycaseEditorID"
+            name="%_UI_SafetycaseEditor_label"
+            icon="icons/full/obj16/SafetycaseModelFile.gif"
+            extensions="safetycase"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetycase.presentation.SafetycaseEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.dependability.safetycase.presentation.SafetycaseActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.genericconstraints.presentation.GenericconstraintsModelWizardID"
+            name="%_UI_GenericconstraintsModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.genericconstraints.presentation.GenericconstraintsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/GenericconstraintsModelFile.gif">
+         <description>%_UI_GenericconstraintsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.genericconstraints.presentation.GenericconstraintsEditorID"
+            name="%_UI_GenericconstraintsEditor_label"
+            icon="icons/full/obj16/GenericconstraintsModelFile.gif"
+            extensions="genericconstraints"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.genericconstraints.presentation.GenericconstraintsEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.genericconstraints.presentation.GenericconstraintsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.elements.presentation.ElementsModelWizardID"
+            name="%_UI_ElementsModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.elements.presentation.ElementsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ElementsModelFile.gif">
+         <description>%_UI_ElementsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.elements.presentation.ElementsEditorID"
+            name="%_UI_ElementsEditor_label"
+            icon="icons/full/obj16/ElementsModelFile.gif"
+            extensions="elements"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.elements.presentation.ElementsEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.elements.presentation.ElementsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.elements._instanceref.presentation._instancerefModelWizardID"
+            name="%_UI__instancerefModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.elements._instanceref.presentation._instancerefModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/_instancerefModelFile.gif">
+         <description>%_UI__instancerefModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.elements._instanceref.presentation._instancerefEditorID"
+            name="%_UI__instancerefEditor_label"
+            icon="icons/full/obj16/_instancerefModelFile.gif"
+            extensions="_instanceref"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.elements._instanceref.presentation._instancerefEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.elements._instanceref.presentation._instancerefActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.datatypes.presentation.DatatypesModelWizardID"
+            name="%_UI_DatatypesModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.datatypes.presentation.DatatypesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DatatypesModelFile.gif">
+         <description>%_UI_DatatypesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.datatypes.presentation.DatatypesEditorID"
+            name="%_UI_DatatypesEditor_label"
+            icon="icons/full/obj16/DatatypesModelFile.gif"
+            extensions="datatypes"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.datatypes.presentation.DatatypesEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.datatypes.presentation.DatatypesActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.userattributes.presentation.UserattributesModelWizardID"
+            name="%_UI_UserattributesModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.userattributes.presentation.UserattributesModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/UserattributesModelFile.gif">
+         <description>%_UI_UserattributesModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.userattributes.presentation.UserattributesEditorID"
+            name="%_UI_UserattributesEditor_label"
+            icon="icons/full/obj16/UserattributesModelFile.gif"
+            extensions="userattributes"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.userattributes.presentation.UserattributesEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.infrastructure.userattributes.presentation.UserattributesActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.annexes.behaviorconstraints.presentation.BehaviorconstraintsModelWizardID"
+            name="%_UI_BehaviorconstraintsModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.annexes.behaviorconstraints.presentation.BehaviorconstraintsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/BehaviorconstraintsModelFile.gif">
+         <description>%_UI_BehaviorconstraintsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.annexes.behaviorconstraints.presentation.BehaviorconstraintsEditorID"
+            name="%_UI_BehaviorconstraintsEditor_label"
+            icon="icons/full/obj16/BehaviorconstraintsModelFile.gif"
+            extensions="behaviorconstraints"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.annexes.behaviorconstraints.presentation.BehaviorconstraintsEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.annexes.behaviorconstraints.presentation.BehaviorconstraintsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.annexes.needs.presentation.NeedsModelWizardID"
+            name="%_UI_NeedsModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.annexes.needs.presentation.NeedsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/NeedsModelFile.gif">
+         <description>%_UI_NeedsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.east_adl.annexes.needs.presentation.NeedsEditorID"
+            name="%_UI_NeedsEditor_label"
+            icon="icons/full/obj16/NeedsModelFile.gif"
+            extensions="needs"
+            class="fr.inria.aoste.eastadl.model.eastadl21.east_adl.annexes.needs.presentation.NeedsEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.east_adl.annexes.needs.presentation.NeedsActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.autosar.genericstructure.autosartoplevelstructure.presentation.AutosartoplevelstructureModelWizardID"
+            name="%_UI_AutosartoplevelstructureModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.autosar.genericstructure.autosartoplevelstructure.presentation.AutosartoplevelstructureModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AutosartoplevelstructureModelFile.gif">
+         <description>%_UI_AutosartoplevelstructureModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.autosar.genericstructure.autosartoplevelstructure.presentation.AutosartoplevelstructureEditorID"
+            name="%_UI_AutosartoplevelstructureEditor_label"
+            icon="icons/full/obj16/AutosartoplevelstructureModelFile.gif"
+            extensions="autosartoplevelstructure"
+            class="fr.inria.aoste.eastadl.model.eastadl21.autosar.genericstructure.autosartoplevelstructure.presentation.AutosartoplevelstructureEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.autosar.genericstructure.autosartoplevelstructure.presentation.AutosartoplevelstructureActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.autosar.genericstructure.generaltemplateclasses.timevalue.presentation.TimevalueModelWizardID"
+            name="%_UI_TimevalueModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.autosar.genericstructure.generaltemplateclasses.timevalue.presentation.TimevalueModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/TimevalueModelFile.gif">
+         <description>%_UI_TimevalueModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.autosar.genericstructure.generaltemplateclasses.timevalue.presentation.TimevalueEditorID"
+            name="%_UI_TimevalueEditor_label"
+            icon="icons/full/obj16/TimevalueModelFile.gif"
+            extensions="timevalue"
+            class="fr.inria.aoste.eastadl.model.eastadl21.autosar.genericstructure.generaltemplateclasses.timevalue.presentation.TimevalueEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.autosar.genericstructure.generaltemplateclasses.timevalue.presentation.TimevalueActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.eastadl21.autosar.systemtemplate.presentation.SystemtemplateModelWizardID"
+            name="%_UI_SystemtemplateModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.eastadl21.autosar.systemtemplate.presentation.SystemtemplateModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SystemtemplateModelFile.gif">
+         <description>%_UI_SystemtemplateModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.eastadl21.autosar.systemtemplate.presentation.SystemtemplateEditorID"
+            name="%_UI_SystemtemplateEditor_label"
+            icon="icons/full/obj16/SystemtemplateModelFile.gif"
+            extensions="systemtemplate"
+            class="fr.inria.aoste.eastadl.model.eastadl21.autosar.systemtemplate.presentation.SystemtemplateEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.eastadl21.autosar.systemtemplate.presentation.SystemtemplateActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated eastadl2110 -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.aoste.eastadl.model.geastadl.ginfrastructure.presentation.GinfrastructureModelWizardID"
+            name="%_UI_GinfrastructureModelWizard_label"
+            class="fr.inria.aoste.eastadl.model.geastadl.ginfrastructure.presentation.GinfrastructureModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/GinfrastructureModelFile.gif">
+         <description>%_UI_GinfrastructureModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated eastadl2110 -->
+      <editor
+            id="fr.inria.aoste.eastadl.model.geastadl.ginfrastructure.presentation.GinfrastructureEditorID"
+            name="%_UI_GinfrastructureEditor_label"
+            icon="icons/full/obj16/GinfrastructureModelFile.gif"
+            extensions="ginfrastructure"
+            class="fr.inria.aoste.eastadl.model.geastadl.ginfrastructure.presentation.GinfrastructureEditor"
+            contributorClass="fr.inria.aoste.eastadl.model.geastadl.ginfrastructure.presentation.GinfrastructureActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

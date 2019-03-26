@@ -1,0 +1,3 @@
+il faut rajouter les delegation ports en entrée et sortie.
+Pour ce faire c'est chiant mais en jouant avec les "sémantic expression" de la representation on devrait s'en sortir
+c'est un peu mal typé...

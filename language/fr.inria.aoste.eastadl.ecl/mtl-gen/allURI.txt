@@ -1,0 +1,5 @@
+'http://www.eclipse.org/emf/2002/Ecore', 
+'http://org.gemoc.moccml/1.0', 
+'http://fr.inria.aoste.timemodel',
+'http://org.gemoc.moccml.fsmmodel/1.0',
+'http://east-adl.info/2.1.10/eastadl21/east_adl/structure/systemmodeling','http://east-adl.info/2.1.10/eastadl21','http://east-adl.info/2.1.10/eastadl21/east_adl/infrastructure/elements','http://east-adl.info/2.1.10/eastadl21/east_adl/structure/functionmodeling','http://east-adl.info/2.1.10/eastadl21/east_adl/behavior','http://east-adl.info/2.1.10/eastadl21/east_adl/timing','http://east-adl.info/2.1.10/eastadl21/east_adl/timing/timingconstraints'

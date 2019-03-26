@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:moccml="http://org.gemoc.moccml/1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" xmi:id="_i8_sgO5REeawYeAEx7jOBg" selectedViews="_jwnh0O5REeawYeAEx7jOBg _jwzIAO5REeawYeAEx7jOBg" version="8.1.1">
+  <models xmi:type="moccml:StateRelationBasedLibrary" href="eastadl.moccml#/"/>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_jwnh0O5REeawYeAEx7jOBg" initialized="true">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.gemoc.mocc.ccslmocc.model.design/description/CCSLMoCC.odesign#//@ownedViewpoints[name='MoCCML']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_jwzIAO5REeawYeAEx7jOBg" initialized="true">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Reused']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>

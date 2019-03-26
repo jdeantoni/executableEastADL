@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<trace:MSEModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:concurrent_mse="http://www.gemoc.org/gemoc_execution_engine_concurrent_mse" xmlns:trace="http://www.gemoc.org/generic_trace">
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_p1_1_globalTime">
+    <feedbackModelSpecificEvent href="MyFirstEastAdlModel.feedback#//@events.0"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_regulator_2_start">
+    <feedbackModelSpecificEvent href="MyFirstEastAdlModel.feedback#//@events.1"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_tempActuator_3_start">
+    <feedbackModelSpecificEvent href="MyFirstEastAdlModel.feedback#//@events.2"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_sensor1_4_start">
+    <feedbackModelSpecificEvent href="MyFirstEastAdlModel.feedback#//@events.3"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_regulator_2_finish">
+    <feedbackModelSpecificEvent href="MyFirstEastAdlModel.feedback#//@events.4"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_tempActuator_3_finish">
+    <feedbackModelSpecificEvent href="MyFirstEastAdlModel.feedback#//@events.5"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_sensor1_4_finish">
+    <feedbackModelSpecificEvent href="MyFirstEastAdlModel.feedback#//@events.6"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_FunctionFlowPortProxyImpl_5_read">
+    <feedbackModelSpecificEvent href="MyFirstEastAdlModel.feedback#//@events.7"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_FunctionFlowPortProxyImpl_6_read">
+    <feedbackModelSpecificEvent href="MyFirstEastAdlModel.feedback#//@events.8"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_FunctionFlowPortProxyImpl_7_write">
+    <feedbackModelSpecificEvent href="MyFirstEastAdlModel.feedback#//@events.9"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_FunctionFlowPortProxyImpl_8_write">
+    <feedbackModelSpecificEvent href="MyFirstEastAdlModel.feedback#//@events.10"/>
+  </ownedMSEs>
+</trace:MSEModel>
